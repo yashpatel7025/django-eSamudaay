@@ -100,15 +100,15 @@ curl --location --request POST 'http://52.172.236.204:8080/order/' \
 
 <img src="./demo_images/1.png" >
 
-- ```sum [ price(i) * quantity(i) ] + delivery_fee - discount``` = ( 235 * 2 ) + ( 1 * 52 ) + 1000 - 500 =  ```1022Rs```
+- order_total = ```sum [ price(i) * quantity(i) ] + delivery_fee - discount``` = ( 235 * 2 ) + ( 1 * 52 ) + 1000 - 500 =  ```1022Rs```
 
 <img src="./demo_images/2.png">
 
-- ```sum[ price(i) * quantity(i) ] + delivery_fee - discount(discount is equal to deliver_fee)``` = (235*2)+(1*52) + 1000 - 1000 = ```522Rs```
+- order_total = ```sum[ price(i) * quantity(i) ] + delivery_fee - discount(discount is equal to deliver_fee)``` = (235*2)+(1*52) + 1000 - 1000 = ```522Rs```
 
 <img src="./demo_images/3.png">
 
-- ```sum[ price(i) * quantity(i) ] + delivery_fee - discount(discount is deliver_fee)``` = (22*2)+(1*59) + 50 - 200 = -47 -> ```0 Rs```
+- order_total = ```sum[ price(i) * quantity(i) ] + delivery_fee - discount(discount is deliver_fee)``` = (22*2)+(1*59) + 50 - 200 = -47 -> ```0 Rs```
 
 <img src="./demo_images/4.png">
 
