@@ -8,11 +8,11 @@
 
 #### Solution for delivery_cost slab
 
--  was looking for optimal way to define delivery_cost slab so that it can be configured easily and new slab can be updated easily
--  used hash table to store slabs as configuration in settings.py 
+-  Was looking for optimal way to define delivery_cost slab so that it can be configured easily and new slab can be updated easily
+-  Used hash table to store slabs as configuration in settings.py 
 ```
 DELIVERY_FEE_CONFIG = {
-    #upto_distance(mt):Rs(paisa)
+    #upto_distance(mt) : Rs(paisa)
     10000: 5000,
     20000: 10000,
     50000: 50000,
@@ -22,12 +22,12 @@ DELIVERY_FEE_CONFIG = {
 
 #### Keeping main logic minimal and organised as possible
 
-- moved important logic like calculating discount, delivery_cost, total cost for all item in other file called utils.py, to keep main code block in views.py clean and small as possible
+- Moved important logic like calculating discount, delivery_cost, total cost for all item in other file called utils.py, to keep main code block in views.py clean and small as possible
 
 #### Proper validations for input request data
 
 - Handled and validated all cases for i/p API request 
-- e.g required and non-required fields, offer_type can be FLAT or DELIVERY, offer_val can not be null for FLAT offer
+- E.g required and non-required fields, offer_type can be FLAT or DELIVERY, offer_val can not be null for FLAT offer
 
 ### Setup
 
